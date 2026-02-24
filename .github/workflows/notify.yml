@@ -1,0 +1,13 @@
+name: Notify on demo page
+on:
+  push:
+    paths:
+      - 'demo/**'
+  workflow_dispatch:
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Telegram
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" -d chat_id=${{ secrets.CEO_CHAT_ID }} -d text="🚀 New Custom Demo Page Live: ${{ github.event.head_commit.message }}. The Closer is now engaging."
