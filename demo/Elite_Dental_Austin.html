@@ -1,28 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Elite Dental Austin — Frictionless Pilot | ATX AI Solutions</title>
-<link rel="stylesheet" href="../styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elite Dental Austin — ATX AI Solutions</title>
+<style>
+:root{--navy:#0A192F;--orange:#BF5700;--accent:#7C4DFF;--bg:#f8f9fa;--white:#fff;--muted:#6b7280}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--navy)}.wrap{max-width:1100px;margin:0 auto;padding:20px}
+.header{background:var(--navy);color:var(--white);padding:20px}
+.header .brand{display:flex;align-items:center;gap:12px}
+.header .logo{width:44px;height:44px;background:linear-gradient(135deg,var(--accent),#ff8a3d);border-radius:8px;display:inline-block}
+.hero{display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:start;padding:36px 20px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.h-title{font-size:40px;margin:0 0 12px}
+.h-sub{color:#4b5563;margin:0 0 18px}
+.bullets{display:flex;flex-direction:column;gap:8px}
+.bullets li{display:flex;gap:10px;align-items:flex-start}
+.check{width:18px;height:18px;border-radius:6px;background:#53E6A4}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;color:#fff;background:var(--accent);text-decoration:none;font-weight:700}
+.card{background:var(--white);border-radius:12px;padding:18px;box-shadow:0 12px 30px rgba(10,20,40,0.08);}
+.revenue{background:#fff7ed;border:2px solid var(--orange);padding:20px;border-radius:10px;text-align:center}
+.revenue .num{font-size:36px;color:var(--orange);font-weight:900}
+.trust{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.trust .badge{background:#f3f4f6;padding:8px 10px;border-radius:999px;font-weight:700;color:#334155}
+.form input{width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:8px}
+.footer{padding:30px 0;text-align:center;color:#64748b}
+</style>
 </head>
 <body>
-  <!-- HERO REPLACED: premium two-column layout inserted by Atlas -->
-  <!-- For full content see repo commit -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <div class="brand">
-        <div class="logo">ATX</div>
-        <div class="brand-text"><div class="brand-name">ATX AI Solutions</div><div class="brand-sub">Austin • Front‑Desk Recovery</div></div>
-      </div>
-      <nav class="header-cta" aria-label="Primary actions"><a class="btn btn-outline" href="#value">See Day‑4</a><a class="btn btn-primary" href="#final-cta">Request Pilot</a></nav>
-    </div>
-  </header>
-  <main>
-    <!-- Full premium hero and page content written earlier has been applied. -->
-    <iframe src="/atxai-demo-assets/demo/Elite_Dental_Austin.html" style="width:100%;height:100vh;border:none;"></iframe>
-  </main>
+<header class="header"><div class="wrap"><div class="brand"><div class="logo"></div><div><div style="font-weight:800">ATX AI Solutions</div><div style="font-size:13px;color:#cbd5e1">Austin • Front‑Desk Recovery</div></div></div></div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<div style="background:#fff;padding:18px;border-radius:12px;margin-bottom:14px"><div style="font-size:13px;font-weight:700;color:var(--orange)">CONFIDENTIAL REVENUE AUDIT</div></div>
+<h1 class="h-title">Stop losing high-value bookings when the phone goes unanswered.</h1>
+<p class="h-sub">We recover missed-call revenue for Austin dentists: 24/7 answering, insurance verification, and safe booking guardrails. No contract, no setup fee.</p>
+<ul class="bullets">
+<li><span class="check"></span><div><strong>24/7 AI Secretary</strong><div style="color:var(--muted);font-size:14px">Answers & qualifies calls anytime</div></div></li>
+<li><span class="check"></span><div><strong>Instant insurance check</strong><div style="color:var(--muted);font-size:14px">Less hold time, fewer denials</div></div></li>
+<li><span class="check"></span><div><strong>Manager escalation</strong><div style="color:var(--muted);font-size:14px">Two‑step guardrails prevent bad bookings</div></div></li>
+</ul>
+<div style="margin-top:18px" class="ctaRow"><a class="btn" href="#request">Request Pilot</a></div>
+</div>
+<aside>
+<div class="card">
+<div style="font-size:13px;color:var(--muted);font-weight:700">Estimated missed revenue</div>
+<div class="revenue"><div style="font-size:13px;color:var(--muted)">Example</div><div class="num">$4,500/mo</div><div style="color:#475569;margin-top:6px">~4 bookings/month recovered</div></div>
+<div style="margin-top:12px" class="trust"><div class="badge">HIPAA Ready</div><div class="badge">BAA</div><div class="badge">256‑bit AES</div></div>
+</div>
+</aside>
+</section>
+</main>
+<footer class="footer">© ATX AI Solutions — Austin TX</footer>
 </body>
 </html>
